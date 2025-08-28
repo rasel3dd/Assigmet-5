@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Emergency Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <header class="w-full bg-white ">
+    <div class=" mx-auto px-3  flex items-center justify-between ">
+      <div class="flex items-center gap-3">
+        <div class="h-8 w-8 ">
+          <img src="assets/logo.png" alt="">
+        </div>
+        <span class="font-extrabold text-slate-900">Emergency<br>Service</span>
+      </div>
+      <div class="hidden md:flex items-center gap-3 text-sm">
+        <div class="flex items-center gap-1 px-5 py-1 rounded-full bg-slate-100"id="heartCount"><span>0</span>
+          <span><img src="assets/heart.png" alt="" class="h-4 w-4"></span></div>
+        <div class="flex items-center gap-1 px-4 py-1 rounded-full bg-slate-100"id="coinCount"><span>100</span>
+          <span><img src="assets/coin.png" alt="" class="h-4 w-4"></span></div>
+        <button class="rounded-full bg-emerald-600 text-white px-4 py-1 text-sm hover:bg-emerald-700 transition"id="copyCount" onclick="copyPageUrl()">0 Copy</button>
+      </div>
+      <div class="md:hidden">
+        <button class="rounded-full bg-emerald-600 text-white px-3 py-1.5 text-sm" onclick="copyPageUrl()">Copy</button>
+      </div>
+    </div>
+  </header>
     
 </body>
 </html>
